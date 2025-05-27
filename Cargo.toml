@@ -1,0 +1,16 @@
+[package]
+name = "login_middleware"
+version = "0.1.0"
+edition = "2024"
+
+[dependencies]
+actix-session = { version = "0.10.1", features = ["cookie-session"] }
+actix-web = "4.10.2"
+cred_auth = { git = "http://www.github.com/GrigorianNick/cred_auth", version = "0.1.0" }
+futures-util = "0.3.31"
+serde = { version = "1.0.219", features = ["derive"] }
+uuid = { version = "1.16.0", features = ["v4"] }
+
+[dependencies.rusqlite]
+version = "0.34.0"
+features = ["bundled"]
